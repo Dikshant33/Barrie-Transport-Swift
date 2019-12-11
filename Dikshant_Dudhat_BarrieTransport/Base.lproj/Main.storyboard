@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dikshant_Dudhat_BarrieTransport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barrie Transport Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8j-w3-JwZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Dikshant Dudhat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVz-fw-tPU">
+                                <rect key="frame" x="0.0" y="840" width="414" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O6B-Gg-PJ3">
+                                <rect key="frame" x="0.0" y="73" width="414" height="767"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oVz-fw-tPU" secondAttribute="bottom" id="0qv-1O-Obu"/>
+                            <constraint firstItem="Z8j-w3-JwZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5By-Yj-be4"/>
+                            <constraint firstItem="O6B-Gg-PJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Mc-pZ-a9X"/>
+                            <constraint firstItem="O6B-Gg-PJ3" firstAttribute="top" secondItem="Z8j-w3-JwZ" secondAttribute="bottom" id="BQK-RL-YDl"/>
+                            <constraint firstItem="Z8j-w3-JwZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ILp-wD-G4h"/>
+                            <constraint firstItem="Z8j-w3-JwZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rrk-UE-Dit"/>
+                            <constraint firstItem="Z8j-w3-JwZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SNV-Sz-QhQ"/>
+                            <constraint firstItem="O6B-Gg-PJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TNt-Ne-2Ec"/>
+                            <constraint firstItem="Z8j-w3-JwZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xrb-bM-5My"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z8j-w3-JwZ" secondAttribute="trailing" id="aBR-9e-Qn6"/>
+                            <constraint firstItem="oVz-fw-tPU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bev-kc-N0w"/>
+                            <constraint firstItem="O6B-Gg-PJ3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eJx-n4-GEd"/>
+                            <constraint firstItem="oVz-fw-tPU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r9C-qr-s7q"/>
+                            <constraint firstItem="O6B-Gg-PJ3" firstAttribute="top" secondItem="Z8j-w3-JwZ" secondAttribute="bottom" id="uKH-GJ-2mQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O6B-Gg-PJ3" secondAttribute="trailing" id="w5w-eP-ZcM"/>
+                            <constraint firstItem="oVz-fw-tPU" firstAttribute="top" secondItem="O6B-Gg-PJ3" secondAttribute="bottom" id="xId-cL-frI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="O6B-Gg-PJ3" id="ixS-oW-h5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+</document>
